@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111113">
+  <meta name="description" content="A bold, fan-made motorsport race weekend experience.">
+  <title>APEX — Race Weekend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <div class="topline"><span class="live-dot"></span> THE GRID IS YOURS <span class="topline-right">RACE WEEKEND <span id="current-year"></span></span></div>
+    <header class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Apex home"><span class="brand-mark">A</span><span>APEX<span class="brand-period">.</span></span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#weekend">Weekend</a><a href="#standings">The grid</a><a href="#about">About</a>
+        <a class="nav-cta" href="#weekend">Explore <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SPEED. STRATEGY. STORY.</p>
+          <h1>BUILT FOR<br>THE <span>RUSH.</span></h1>
+          <p class="hero-description">Lights out. Heart racing. Every millisecond tells a story. Get closer to the spectacle of a race weekend.</p>
+          <a href="#weekend" class="button button-primary">ENTER THE PADDOCK <span>↗</span></a>
+          <div class="hero-note"><span class="note-bar"></span><span>YOUR FRONT ROW SEAT<br><b>STARTS HERE</b></span></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a racing car on track" role="img">
+          <div class="art-glow"></div><div class="speed-lines"></div><div class="art-label art-label-top">NO LIFT</div>
+          <svg class="race-car" viewBox="0 0 760 390" role="img" aria-label="Abstract red open-wheel race car">
+            <defs><linearGradient id="body" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff554f"/><stop offset=".55" stop-color="#d91e26"/><stop offset="1" stop-color="#82121b"/></linearGradient><linearGradient id="wing" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f7f5f2"/><stop offset="1" stop-color="#a7a6a6"/></linearGradient></defs>
+            <ellipse cx="389" cy="325" rx="315" ry="25" fill="#000" opacity=".48"/>
+            <path d="M105 270h99l25-27 70-19 47-60 97-2 59 33 87 14 48 27 39 5 21 29-38 14H130z" fill="url(#body)" stroke="#ff766d" stroke-width="3"/>
+            <path d="m331 226 26-50 65-5 44 34-10 18-76-7z" fill="#242629" stroke="#f2f0ed" stroke-width="4"/><path d="m352 222 16-35 46-4 31 25-5 12-60-5z" fill="#9cc5ce" opacity=".8"/>
+            <path d="m269 231 78-8 65 12 54-2 37 15-53 10-111-5-74 8z" fill="#e7e4df"/><path d="m182 247 92-4 32 15-105 10-30-8z" fill="#161719"/><path d="m570 236 111 20-18 13-109-12z" fill="url(#wing)"/><path d="m653 244 12-35 12 3-3 38z" fill="#f5f2ee"/><path d="m206 258 113 4 5 11-111-1z" fill="#151618"/>
+            <rect x="142" y="229" width="49" height="85" rx="17" fill="#18191b" transform="rotate(8 142 229)"/><rect x="552" y="226" width="53" height="91" rx="18" fill="#18191b" transform="rotate(-8 552 226)"/><rect x="151" y="241" width="24" height="56" rx="10" fill="#343638" transform="rotate(8 151 241)"/><rect x="566" y="238" width="24" height="59" rx="10" fill="#343638" transform="rotate(-8 566 238)"/>
+            <path d="m85 275 51-2 14 12-47 7z" fill="#f4f0ea"/><path d="m444 222 31-2 12 8-37 2z" fill="#f6f2ec"/><path d="m286 241 34-7 12 6-38 10z" fill="#f6f2ec"/><circle cx="332" cy="252" r="5" fill="#f7f4ef"/><circle cx="487" cy="247" r="5" fill="#f7f4ef"/>
+          </svg>
+          <div class="art-label art-label-bottom">FULL SEND <span>///</span></div><div class="hero-index">01 <span>/</span> 03</div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span><span>MADE FOR THE MOMENTS THAT MATTER</span><span>EST. ON THE GRID</span></div>
+      </section>
+
+      <section class="weekend section" id="weekend">
+        <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> THE WEEKEND</p><h2>IT'S RACE <span>WEEK.</span></h2></div><p class="section-intro">Three days. One result. A thousand ways to make history.</p></div>
+        <div class="weekend-grid">
+          <article class="session-card session-feature"><div class="card-number">01 / FRIDAY</div><div class="session-icon">◉</div><div><p class="card-kicker">FIND THE LIMIT</p><h3>PRACTICE</h3><p>Dial in the setup. Chase the perfect lap. The weekend starts now.</p></div><span class="card-arrow">↗</span></article>
+          <article class="session-card"><div class="card-number">02 / SATURDAY</div><div class="session-icon">⌁</div><div><p class="card-kicker">EVERY LAP COUNTS</p><h3>QUALIFYING</h3><p>One shot at the front. Nerves, precision, and pure pace.</p></div><span class="card-arrow">↗</span></article>
+          <article class="session-card"><div class="card-number">03 / SUNDAY</div><div class="session-icon">✳</div><div><p class="card-kicker">LIGHTS OUT</p><h3>RACE DAY</h3><p>It's all on the line. Strategy meets instinct at 300 km/h.</p></div><span class="card-arrow">↗</span></article>
+        </div>
+      </section>
+
+      <section class="grid-section" id="standings">
+        <div class="grid-inner"><div class="grid-title"><p class="eyebrow"><span class="eyebrow-line"></span> THE STARTING GRID</p><h2>MADE OF<br><span>WHAT'S NEXT.</span></h2><p>A little room for your favourite drivers, teams, and rivalries. This is your grid to make your own.</p><a class="text-link" href="#about">MEET THE GRID <span>↗</span></a></div>
+          <div class="driver-list" aria-label="Example driver lineup">
+            <div class="driver-row"><span class="driver-pos">01</span><span class="driver-initial">MV</span><span class="driver-name">MAX <b>VELOCITY</b></span><span class="driver-team">SCUDERIA ROSSA</span><span class="driver-points">25<span> PTS</span></span></div>
+            <div class="driver-row"><span class="driver-pos">02</span><span class="driver-initial blue">AL</span><span class="driver-name">ALEX <b>LECLERC</b></span><span class="driver-team">NORTHSTAR GP</span><span class="driver-points">18<span> PTS</span></span></div>
+            <div class="driver-row"><span class="driver-pos">03</span><span class="driver-initial yellow">NL</span><span class="driver-name">NOAH <b>LANDO</b></span><span class="driver-team">PAPAYA RACING</span><span class="driver-points">15<span> PTS</span></span></div>
+            <div class="driver-row"><span class="driver-pos">04</span><span class="driver-initial green">EO</span><span class="driver-name">ELI <b>OSCAR</b></span><span class="driver-team">APEX WORKS</span><span class="driver-points">12<span> PTS</span></span></div>
+          </div>
+          <p class="fiction-note">A fictional sample grid for your template — make it yours.</p>
+        </div>
+      </section>
+
+      <section class="cta-section section" id="about"><div class="cta-mark">A</div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR RACE WEEKEND STARTS HERE</p><h2>CHASE THE<br><span>FEELING.</span></h2><a class="button button-light" href="#home">BACK TO THE TOP <span>↑</span></a></section>
+    </main>
+    <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">A</span><span>APEX<span class="brand-period">.</span></span></a><p>A fan-made motorsport website template. Not affiliated with Formula 1 or any racing team.</p><span>BUILT FOR THE GRID <b>© <span id="footer-year"></span></b></span></footer>
+  </div>
+</body>
+</html>
